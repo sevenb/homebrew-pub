@@ -12,4 +12,15 @@ class Pub < Formula
   def install
     bin.install "pub"
   end
+    
+  test do
+      output = shell_output(bin/"pub --version")
+      assert_match "pub version #{version}\n", output
+
+      system bin/"pub"
+
+      sleep 2
+      assert File.exist?("app_icon")
+  end
+    
 end
