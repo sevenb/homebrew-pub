@@ -16,6 +16,8 @@ class Pub < Formula
   test do
       output = shell_output(bin/"pub --version")
       assert_match "pub version #{version}\n", output
+      
+      system('wget https://github.com/sevenb/homebrew-pub/raw/master/icon-test.png')
 
       system bin/"pub"
 
