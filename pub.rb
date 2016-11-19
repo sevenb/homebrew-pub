@@ -1,8 +1,8 @@
 
 class Pub < Formula
-  depends_on "imagemagick"
+  depends_on "imagemagick" 
   depends_on "jq"
-  desc ""
+  desc "PUB - Mobile assets factory command-line program - www.brunoneves.com"
   homepage "https://github.com/sevenb/pub/"
   url "https://github.com/sevenb/pub/archive/v1.0.0.tar.gz"
   version "1.0.0"
